@@ -4,19 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TomatoWeb — Creative Dev Hub by Nihal</title>
+    <title>TomatoWeb - Developer Hub for Web Apps, Games & Tools by Nihal</title>
     <meta name="description"
-        content="TomatoWeb is a creative hub for experimental web apps, games, and tools by Nihal. A central home for all Tomato-powered projects." />
+        content="TomatoWeb is a personal developer hub by Nihal for building experimental web applications, JavaScript tools, indie games, UI systems, and production-style projects using React and modern web technologies." />
+
     <meta name="author" content="Nihal" />
     <meta name="theme-color" content="#dc2626" />
 
     <link rel="canonical" href="https://tomatoweb.site/" />
     <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <meta name="keywords"
+        content="developer hub, personal developer lab, frontend projects, JavaScript applications, JavaScript experiments, React projects, web applications, UI engineering, indie games, developer tools, software projects, production-style projects, Nihal portfolio, web developer India" />
+
+
 
     <!-- Open Graph -->
-    <meta property="og:title" content="TomatoWeb — Creative Dev Hub" />
+    <meta property="og:title" content="TomatoWeb — Developer Hub for Web Apps, Games & Tools" />
     <meta property="og:description" content="A central hub for all TomatoWeb projects, experiments, and tools." />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TomatoWeb" />
     <meta property="og:url" content="https://tomatoweb.site/" />
 
     <!-- tailwindcss cdn -->
@@ -37,16 +45,36 @@
 
     <!-- jsonLd schema -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Nihal",
-    "url": "https://tomatoweb.site",
-    "sameAs": [],
-    "description": "Creator of TomatoWeb, a creative hub for web apps and experiments.",
-    "knowsAbout": ["Web Development", "JavaScript", "React", "Games", "UI Engineering"]
-  }
-  </script>
+        {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://tomatoweb.site/#website",
+        "name": "TomatoWeb",
+        "url": "https://tomatoweb.site",
+        "description": "TomatoWeb is a personal developer hub hosting independent web applications, JavaScript experiments, developer tools, UI systems, and indie games by Nihal.",
+        "inLanguage": "en",
+        "creator": {
+            "@type": "Person",
+            "@id": "https://ionihal.vercel.app/#person",
+            "name": "Nihal",
+            "url": "https://ionihal.vercel.app",
+            "sameAs": [
+            "https://github.com/ioNihal"
+            ],
+            "knowsAbout": [
+            "Frontend Development",
+            "JavaScript",
+            "React",
+            "Web Applications",
+            "UI Engineering",
+            "Game Development",
+            "Software Projects",
+            "Developer Tools"
+            ]
+        }
+        }
+</script>
+
 </head>
 
 <body class="bg-white text-gray-900 antialiased">
@@ -67,9 +95,11 @@
             </div>
 
             <!-- Mobile menu button -->
-            <button id="menu-toggle" class="md:hidden p-2 text-gray-900 hover:text-tomato" aria-label="Toggle menu" aria-expanded="false">
+            <button id="menu-toggle" class="md:hidden p-2 text-gray-900 hover:text-tomato" aria-label="Toggle menu"
+                aria-expanded="false">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
                 </svg>
             </button>
 
@@ -81,10 +111,15 @@
             </ul>
 
             <!-- Mobile navigation -->
-            <ul id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 flex flex-col gap-0 text-sm font-medium md:hidden">
-                <li><a href="#projects" class="block px-6 py-3 hover:bg-tomatoSoft hover:text-tomato transition-colors">Projects</a></li>
-                <li><a href="#about" class="block px-6 py-3 hover:bg-tomatoSoft hover:text-tomato transition-colors">About</a></li>
-                <li><a href="#contact" class="block px-6 py-3 hover:bg-tomatoSoft hover:text-tomato transition-colors">Contact</a></li>
+            <ul id="mobile-menu"
+                class="hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 flex flex-col gap-0 text-sm font-medium md:hidden">
+                <li><a href="#projects"
+                        class="block px-6 py-3 hover:bg-tomatoSoft hover:text-tomato transition-colors">Projects</a>
+                </li>
+                <li><a href="#about"
+                        class="block px-6 py-3 hover:bg-tomatoSoft hover:text-tomato transition-colors">About</a></li>
+                <li><a href="#contact"
+                        class="block px-6 py-3 hover:bg-tomatoSoft hover:text-tomato transition-colors">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -95,7 +130,7 @@
 
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            menuToggle.setAttribute('aria-expanded', 
+            menuToggle.setAttribute('aria-expanded',
                 menuToggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
         });
 
@@ -112,7 +147,8 @@
 
         <!-- Hero -->
         <section class="py-12 sm:py-16 md:py-24 text-center">
-            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-center leading-tight">
+            <h1
+                class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-center leading-tight">
                 A Home for
                 <br />
                 <span class="text-tomato">
@@ -122,16 +158,22 @@
                 Projects
             </h1>
 
+            <p class="mt-3 text-xs text-gray-500">
+                Personal developer hub by Nihal <br> Not affiliated with any company named Tomato Web
+            </p>
+
             <p class="mt-4 sm:mt-6 max-w-2xl mx-auto text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
                 TomatoWeb is my centralized hub for experiments, tools, games, and ideas -
                 each living on its own subdomain.
             </p>
 
             <div class="mt-6 sm:mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-                <a href="#projects" class="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-tomato text-white rounded-lg font-semibold hover:bg-tomatoDark transition-colors">
+                <a href="#projects"
+                    class="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-tomato text-white rounded-lg font-semibold hover:bg-tomatoDark transition-colors">
                     Explore Projects
                 </a>
-                <a href="#about" class="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg font-semibold hover:border-tomato transition-colors">
+                <a href="#about"
+                    class="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg font-semibold hover:border-tomato transition-colors">
                     Learn More
                 </a>
             </div>
@@ -148,9 +190,11 @@
                     <p class="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base">
                         Visual demos, canvas experiments, and UI ideas.
                     </p>
-                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500">
+                    <a href="https://experiments.tomatoweb.site"
+                        class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500 underline hover:text-tomato">
                         experiments.tomatoweb.site
-                    </p>
+                    </a>
+
                 </article>
 
                 <article class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
@@ -158,9 +202,10 @@
                     <p class="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base">
                         Indie games, mechanics tests, and interactive stories.
                     </p>
-                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500">
+                    <a href="https://games.tomatoweb.site"
+                        class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500 underline hover:text-tomato">
                         games.tomatoweb.site
-                    </p>
+                    </a>
                 </article>
 
                 <article class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
@@ -168,20 +213,36 @@
                     <p class="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base">
                         Developer utilities, dashboards, and micro-apps.
                     </p>
-                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500">
+                    <a href="https://tools.tomatoweb.site"
+                        class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500 underline hover:text-tomato">
                         tools.tomatoweb.site
-                    </p>
+                    </a>
                 </article>
             </div>
         </section>
+
+        <section class="py-10">
+            <h2 class="text-xl font-bold mb-3">How TomatoWeb Is Structured</h2>
+            <p class="max-w-3xl text-gray-700 text-sm sm:text-base">
+                Each project lives on its own subdomain with isolated deployments,
+                independent repositories, and production-style environments.
+                This allows experimentation without breaking the core hub.
+            </p>
+        </section>
+
 
         <!-- About -->
         <section id="about" class="py-12 sm:py-16 md:py-20">
             <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Why TomatoWeb?</h2>
             <p class="max-w-3xl text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-                TomatoWeb is designed as a long-term creative archive.
-                Instead of scattered repos and demos, everything lives under one identity -
-                playful, experimental, and always evolving.
+                TomatoWeb is designed as a long-term creative development hub where independent
+                web projects live on isolated subdomains. My personal portfolio and resume are
+                available at
+                <a href="https://ionihal.vercel.app" target="_blank" rel="noopener noreferrer"
+                    class="text-tomato no-underline hover:underline">
+                    ionihal.vercel.app
+                </a>,
+                while TomatoWeb focuses on experiments, systems, and production-style builds.
             </p>
         </section>
 
@@ -192,15 +253,23 @@
                 Want to collaborate or explore something cool?
             </p>
             <p class="mt-2 sm:mt-3 font-medium text-sm sm:text-base">
-                Email: <a href="mailto:nihal04x@gmail.com" class="text-tomato underline hover:no-underline transition-all">nihal04x@gmail.com</a>
+                Email: <a href="mailto:nihal04x@gmail.com"
+                    class="text-tomato underline hover:no-underline transition-all">nihal04x@gmail.com</a>
             </p>
         </section>
+
+        <p class="sr-only">
+            TomatoWeb is a personal developer hub by Nihal featuring frontend projects,
+            JavaScript applications, React experiments, indie games, and developer tools.
+        </p>
+
 
     </main>
 
 
     <footer class="border-t border-gray-100 py-6 sm:py-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-xs sm:text-sm text-gray-500 flex flex-col sm:flex-row justify-between flex-wrap gap-3 sm:gap-4">
+        <div
+            class="max-w-6xl mx-auto px-4 sm:px-6 text-xs sm:text-sm text-gray-500 flex flex-col sm:flex-row justify-between flex-wrap gap-3 sm:gap-4">
             <span id="copyright"></span>
             <script>
                 document.addEventListener("DOMContentLoaded", () => {
