@@ -59,16 +59,29 @@
         },
         "hasPart": [
             {
-            "@type": "SoftwareSourceCode",
-            "name": "node-ws",
-            "description": "A low-level WebSocket server built from scratch using Node.js core APIs, implementing the WebSocket protocol without external libraries.",
-            "programmingLanguage": "JavaScript",
-            "runtimePlatform": "Node.js",
-            "codeRepository": "https://github.com/ioNihal/node-ws",
-            "author": {
-                "@type": "Person",
-                "name": "Nihal"
-            }
+                "@type": "SoftwareSourceCode",
+                "name": "node-ws",
+                "description": "A low-level WebSocket server built from scratch using Node.js core APIs, implementing the WebSocket protocol without external libraries.",
+                "programmingLanguage": "JavaScript",
+                "runtimePlatform": "Node.js",
+                "codeRepository": "https://github.com/ioNihal/node-ws",
+                "author": {
+                    "@type": "Person",
+                    "name": "Nihal"
+                }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "RenderCard",
+                "description": "A URL-based Open Graph image generator built with Next.js Edge Runtime, allowing developers to generate dynamic, cacheable social preview images using query parameters.",
+                "applicationCategory": "DeveloperTool",
+                "operatingSystem": "Any",
+                "url": "https://rendercard.vercel.app",
+                "author": {
+                    "@type": "Person",
+                    "name": "Nihal",
+                    "url": "https://ionihal.vercel.app"
+                }
             }
         ]
         }
@@ -210,6 +223,36 @@
                         </a>
                         <span class="text-gray-400">
                             • Educational / Experimental
+                        </span>
+                    </div>
+                </article>
+
+                <!-- render card -->
+                <article id="rendercard" class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
+                    <h3 class="font-semibold text-lg sm:text-xl">
+                        🖼 RenderCard
+                    </h3>
+
+                    <p class="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base">
+                        RenderCard is a URL-based Open Graph (OG) image generator built with
+                        Next.js Edge Runtime. It generates dynamic, cacheable social preview
+                        images using query parameters - no SDKs, no uploads.
+                    </p>
+
+                    <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Dynamic OG image generation via Edge Runtime</li>
+                        <li>Multiple visual themes (minimal, dark, spotlight, mono)</li>
+                        <li>URL-driven configuration (title, description, date, accent)</li>
+                        <li>Designed for SEO, social sharing, and metadata</li>
+                    </ul>
+
+                    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                        <a href="https://rendercard.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-tomato underline hover:no-underline">
+                            Live Website
+                        </a>
+                        <span class="text-gray-400">
+                            • Developer Tool
                         </span>
                     </div>
                 </article>
