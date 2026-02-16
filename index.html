@@ -11,7 +11,7 @@
     <meta name="author" content="Nihal" />
     <meta name="theme-color" content="#dc2626" />
 
-    <link rel="canonical" href="https://tomatoweb.site/" />
+    <link rel="canonical" href="https://tomatoweb.site" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
 
@@ -25,7 +25,20 @@
     <meta property="og:description" content="A central hub for all TomatoWeb projects, experiments, and tools." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="TomatoWeb" />
-    <meta property="og:url" content="https://tomatoweb.site/" />
+    <meta property="og:url" content="https://tomatoweb.site" />
+    <meta property="og:image"
+        content="https://rendercard.vercel.app/api/rendercard?title=TomatoWeb&description=Developer+Hub+for+Web+Apps%2C+Games+%26+Tools&theme=glass&accent=%23dc2626" />
+    <meta property="og:image:alt" content="TomatoWeb - Developer Hub for Web Apps, Games & Tools" />
+
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TomatoWeb - Developer Hub for Web Apps, Games & Tools" />
+    <meta name="twitter:description" content="A central hub for all TomatoWeb projects, experiments, and tools." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image"
+        content="https://rendercard.vercel.app/api/rendercard?title=TomatoWeb&description=Developer+Hub+for+Web+Apps%2C+Games+%26+Tools&theme=glass&accent=%23dc2626" />
+    <meta name="twitter:image:alt" content="TomatoWeb - Developer Hub for Web Apps, Games & Tools" />
+
 
     <!-- tailwindcss cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -82,9 +95,24 @@
                     "name": "Nihal",
                     "url": "https://ionihal.vercel.app"
                 }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "Formcord",
+                "description": "Lightweight, universal notifications to Discord using only Web APIs.",
+                "applicationCategory": "DeveloperTool",
+                "operatingSystem": "Any",
+                "url": "https://formcord.vercel.app",
+                "downloadUrl": "https://www.npmjs.com/package/formcord",
+                "codeRepository": "https://github.com/ioNihal/formcord",
+                "programmingLanguage": "JavaScript",
+                "author": {
+                    "@type": "Person",
+                    "name": "Nihal",
+                    "url": "https://ionihal.vercel.app"
+                }
             }
-        ]
-        }
+        ]}
     </script>
 
 
@@ -219,7 +247,7 @@
                     <div class="mt-4 flex flex-wrap gap-3 text-sm">
                         <a href="https://github.com/ioNihal/node-ws" target="_blank" rel="noopener noreferrer"
                             class="text-tomato underline hover:no-underline">
-                            GitHub Repository
+                            GitHub
                         </a>
                         <span class="text-gray-400">
                             • Educational / Experimental
@@ -254,6 +282,42 @@
                         <span class="text-gray-400">
                             • Developer Tool
                         </span>
+                    </div>
+                </article>
+
+                <!-- formcord -->
+                <article id="formcord" class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
+                    <h3 class="font-semibold text-lg sm:text-xl">
+                        📣 Formcord
+                    </h3>
+
+                    <p class="mt-3 text-gray-600 text-sm sm:text-base">
+                        Lightweight, universal notifications to Discord using only Web APIs.
+                    </p>
+
+                    <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Requirements: Node 18+ (or any runtime with <code>fetch</code>)</li>
+                        <li>Zero dependencies, best-effort delivery</li>
+                        <li>Retries once on HTTP 429 rate limits</li>
+                        <li>Helpers: <code>contact</code>, <code>error</code>, <code>deploy</code>,
+                            <code>feedback</code>, <code>bug</code>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                        <a href="https://www.npmjs.com/package/formcord" target="_blank" rel="noopener noreferrer"
+                            class="text-tomato underline hover:no-underline">
+                            NPM Package
+                        </a>
+                        <a href="https://formcord.vercel.app/docs" target="_blank" rel="noopener noreferrer"
+                            class="text-tomato underline hover:no-underline">
+                            Docs
+                        </a>
+                        <a href="https://github.com/ioNihal/formcord" target="_blank" rel="noopener noreferrer"
+                            class="text-tomato underline hover:no-underline">
+                            GitHub
+                        </a>
+                        <span class="text-gray-400">• MIT</span>
                     </div>
                 </article>
 
