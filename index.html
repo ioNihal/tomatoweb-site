@@ -204,8 +204,7 @@
             </p>
 
             <p class="mt-4 sm:mt-6 max-w-2xl mx-auto text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
-                TomatoWeb is my centralized hub for experiments, tools, games, and ideas -
-                each living on its own subdomain.
+                TomatoWeb is my centralized hub for experiments, tools, games, and ideas
             </p>
 
             <div class="mt-6 sm:mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
@@ -221,103 +220,936 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="py-12 sm:py-16 md:py-20">
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 md:mb-10">Projects & Subdomains</h2>
+        <section id="projects" class="py-12 sm:py-16 md:py-24 max-w-5xl mx-auto">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 sm:mb-10 gap-2">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Projects Directory
+                </h2>
+                <span class="text-sm font-medium text-gray-500">16 Projects</span>
+            </div>
 
-            <div class="grid grid-cols-1 gap-4 sm:gap-6 md:gap-8">
-                <!-- Card -->
-                <article id="node-ws" class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
-                    <h3 class="font-semibold text-lg sm:text-xl">
-                        🔌 node-ws (From Scratch)
-                    </h3>
-
-                    <p class="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base">
-                        A low-level WebSocket server built using Node.js core APIs -
-                        implementing the WebSocket handshake, frame encoding/decoding,
-                        room-based broadcasting, and client management without external libraries.
-                    </p>
-
-                    <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
-                        <li>Manual HTTP → WebSocket upgrade handshake</li>
-                        <li>RFC-compliant frame masking & decoding</li>
-                        <li>Room-based message broadcasting</li>
-                        <li>No <code>ws</code>, no frameworks - pure Node.js</li>
-                    </ul>
-
-                    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <div class="flex flex-col border border-gray-100 rounded-2xl overflow-hidden shadow-sm shadow-gray-100/50">
+                <!-- node-ws -->
+                <article id="node-ws"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🔌</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://github.com/ioNihal/node-ws" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    node-ws
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                low-level WebSocket server built using Node.js core APIs - implementing the WebSocket
+                                handshake, frame encoding/decoding, room-based broadcasting, and client management
+                                without external libraries.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Educational</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Experimental</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Educational</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Experimental</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
                         <a href="https://github.com/ioNihal/node-ws" target="_blank" rel="noopener noreferrer"
-                            class="text-tomato underline hover:no-underline">
-                            GitHub
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
                         </a>
-                        <span class="text-gray-400">
-                            • Educational / Experimental
-                        </span>
                     </div>
                 </article>
-
-                <!-- render card -->
-                <article id="rendercard" class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
-                    <h3 class="font-semibold text-lg sm:text-xl">
-                        🖼 RenderCard
-                    </h3>
-
-                    <p class="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base">
-                        RenderCard is a URL-based Open Graph (OG) image generator built with
-                        Next.js Edge Runtime. It generates dynamic, cacheable social preview
-                        images using query parameters - no SDKs, no uploads.
-                    </p>
-
-                    <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
-                        <li>Dynamic OG image generation via Edge Runtime</li>
-                        <li>Multiple visual themes (minimal, dark, spotlight, mono)</li>
-                        <li>URL-driven configuration (title, description, date, accent)</li>
-                        <li>Designed for SEO, social sharing, and metadata</li>
-                    </ul>
-
-                    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                <!-- rendercard -->
+                <article id="rendercard"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🖼</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://rendercard.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    RenderCard
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">
+                                RenderCard is a URL-based Open Graph (OG) image generator built with Next.js Edge
+                                Runtime. It generates dynamic, cacheable social preview images using query parameters -
+                                no SDKs, no uploads.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Developer
+                                    Tool</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Developer
+                                Tool</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
                         <a href="https://rendercard.vercel.app" target="_blank" rel="noopener noreferrer"
-                            class="text-tomato underline hover:no-underline">
-                            Live Website
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
                         </a>
-                        <span class="text-gray-400">
-                            • Developer Tool
-                        </span>
                     </div>
                 </article>
-
                 <!-- formcord -->
-                <article id="formcord" class="border rounded-xl p-4 sm:p-6 hover:shadow-lg transition">
-                    <h3 class="font-semibold text-lg sm:text-xl">
-                        📣 Formcord
-                    </h3>
-
-                    <p class="mt-3 text-gray-600 text-sm sm:text-base">
-                        Lightweight, universal notifications to Discord using only Web APIs.
-                    </p>
-
-                    <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
-                        <li>Requirements: Node 18+ (or any runtime with <code>fetch</code>)</li>
-                        <li>Zero dependencies, best-effort delivery</li>
-                        <li>Retries once on HTTP 429 rate limits</li>
-                        <li>Helpers: <code>contact</code>, <code>error</code>, <code>deploy</code>,
-                            <code>feedback</code>, <code>bug</code>
-                        </li>
-                    </ul>
-
-                    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                <article id="formcord"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">📣</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://www.npmjs.com/package/formcord" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Formcord
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">
+                                Lightweight, universal notifications to Discord using only Web APIs.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Developer
+                                    Tool</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">MIT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Developer
+                                Tool</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">MIT</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/formcord" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
                         <a href="https://www.npmjs.com/package/formcord" target="_blank" rel="noopener noreferrer"
-                            class="text-tomato underline hover:no-underline">
-                            NPM Package
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="NPM Package" title="NPM Package">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z" />
+                            </svg>
                         </a>
                         <a href="https://formcord.vercel.app/docs" target="_blank" rel="noopener noreferrer"
-                            class="text-tomato underline hover:no-underline">
-                            Docs
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Docs" title="Docs">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
                         </a>
-                        <a href="https://github.com/ioNihal/formcord" target="_blank" rel="noopener noreferrer"
-                            class="text-tomato underline hover:no-underline">
-                            GitHub
+                    </div>
+                </article>
+
+                <!-- Toolight -->
+                <article id="toolight"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🛠️</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://toolight.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Toolight
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">
+                                TooLight is a lightweight utility web app for experimenting with colors, themes, and
+                                light-weight tools directly in the browser.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Utility
+                                    Tool</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Utility
+                                Tool</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/light.io" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
                         </a>
-                        <span class="text-gray-400">• MIT</span>
+                        <a href="https://toolight.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- starrynight-canvas -->
+                <article id="starrynight-canvas"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🎨</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://ionihal.github.io/starrynight-canvas/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    StarryNight Painting
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">
+                                Procedural, stroke-based reconstruction of The Starry Night using directional flow
+                                fields and animated brush strokes in HTML5 Canvas API 2D.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Art</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Experimental</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Art</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Experimental</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/starrynight-canvas" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://ionihal.github.io/starrynight-canvas/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- procedural-tower-canvas -->
+                <article id="procedural-tower-canvas"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🗼</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://ionihal.github.io/procedural-tower-canvas/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Procedural Tower 3D
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                procedural HTML5 Canvas API experiment exploring perspective projection, chained
+                                geometry, and
+                                organic motion. Includes interactive head steering, debug overlays, and real-time
+                                geometric annotations.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Art</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Experimental</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Art</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Experimental</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/procedural-tower-canvas" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://ionihal.github.io/procedural-tower-canvas/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <!-- pixels-art -->
+                <article id="pixels-art"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🎨</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://ionihal.github.io/Pixels-art/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Pixels Art
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A fun
+                                HTML5 Canvas API based pixel art playground that generates animated patterns, shapes,
+                                and visuals
+                                using pure JavaScript.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Art</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Experimental</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Art</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Experimental</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/Pixels-art" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://ionihal.github.io/Pixels-art/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- duopingo -->
+                <article id="duopingo"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🎓</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://duopingo.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    DuoPingo
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">
+                                An open-source JavaScript practicing app. With Generative AI problems, path
+                                based learning, achievements and more.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Vibe
+                                    Coded</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Vibe
+                                Coded</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Learning</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/duopingo" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://duopingo.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- budget-splitter -->
+                <article id="budget-splitter"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">💰</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://budget-splitter.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Splitter
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                sleek expense-splitting web app designed for friends and family. Easily calculate shared
+                                costs and organize different events in their own dedicated spaces.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Academic
+                                    Project</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Utility
+                                    Tool</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Academic
+                                Project</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Utility
+                                Tool</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/budget-splitter" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://budget-splitter.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- survey-app -->
+                <article id="survey-app"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">📝</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://kiosk-survey.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Kiosk Survey
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                React-based interactive survey application designed for kiosk machines. It guides users
+                                through a multi-screen questionnaire and securely saves responses to local storage.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Embeded
+                                    UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Embeded
+                                UI</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/survey-app" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://kiosk-survey.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- sims-dashboard-front -->
+                <article id="sims-dashboard-front"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🏪</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://sims-dashboard-front.vercel.app" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Inventory Management System
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                comprehensive inventory management system for FMCG buisness owners built with React and
+                                Node.js. It allows users
+                                to
+                                track inventory, manage stock, and generate reports. It also has retailers faced
+                                E-commerce
+                                website. </p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Academic
+                                    Project</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">E
+                                    Commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Academic
+                                Project</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">E
+                                Commerce</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/sims-dashboard-front" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- strx -->
+                <article id="strx"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🔤</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://github.com/ioNihal/strx" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    StringX
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">
+                                Repository for NPM package @n1hal/strx, utility package for string manipulations and
+                                string related tools. Small, dependency-free string helpers - clean, consistent, and
+                                zero bloat.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">MIT</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Developer
+                                    Tool</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">MIT</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Developer
+                                Tool</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/strx" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.npmjs.com/package/@n1hal/strx" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="NPM Package" title="NPM Package">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <!-- game2d -->
+                <article id="game2d"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🎮</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://stickman2d.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Stickman 2D
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                fast-paced 2D stickman fighting game built with HTML5 Canvas and vanilla JavaScript.
+                                Features endless 1v1 battles, simple AI, responsive controls, and mobile support.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Game</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Educational</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Game</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Educational</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/Game2D" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://ionihal.github.io/game2dsite/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- project-lyric -->
+                <article id="project-lyric"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🎶</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://github.com/ioNihal/project-lyric" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Project Lyrics
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                custom interactive music player featuring three pre-loaded tracks. It includes full
+                                playback controls and smooth, synchronized lyrics animation.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Music
+                                    Player</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Music
+                                Player</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/project-lyric" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://ionihal.github.io/project-lyric/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- newapp -->
+                <article id="newapp"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">📰</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://keralanews-eosin.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Kerala Live News
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">A
+                                multi-platform news client that aggregates and streams live broadcasts directly from
+                                Kerala news channels on YouTube. Includes a dedicated Android APK.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Multi
+                                    Platform</span>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Media
+                                    Player</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Multi
+                                Platform</span>
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Media
+                                Player</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/newApp" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://kerala-news.vercel.app/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+
+
+                <!-- restaurant-page -->
+                <article id="restaurant-page"
+                    class="group relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 py-4 sm:py-5 px-4 sm:px-6 hover:bg-gray-50/80 transition-colors border-b border-gray-100 bg-white">
+                    <div class="flex flex-1 items-start gap-4 min-w-0">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gray-50 text-xl rounded-xl border border-gray-100">
+                            <span aria-hidden="true">🏩</span>
+                        </div>
+                        <div class="flex flex-col min-w-0 flex-1">
+                            <h3
+                                class="text-base font-semibold text-gray-900 group-hover:text-tomato transition-colors truncate">
+                                <a href="https://github.com/ioNihal/restaurant-page" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="focus:outline-none before:absolute before:inset-0 before:z-10">
+                                    Sathaarbucks
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1 sm:pr-4 leading-relaxed">This
+                                project is a simple restaurant website built as an academic mini project to practice
+                                core front-end skills. The focus is on structuring a clean layout, organizing content
+                                properly, and creating a basic but usable user interface using fundamental web
+                                technologies.</p>
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3 sm:hidden relative z-20">
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 tracking-wide">Academic
+                                    Project</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-3 flex-shrink-0 w-48 justify-end relative z-20">
+                        <div class="flex flex-wrap justify-end gap-1.5">
+                            <span
+                                class="inline-flex items-center px-2 py-1 rounded-md text-[11px] font-medium bg-gray-100/80 text-gray-600">Academic
+                                Project</span>
+                        </div>
+                    </div>
+                    <div
+                        class="relative z-20 flex items-center justify-end sm:justify-center gap-2.5 flex-shrink-0 sm:w-20 mt-3 sm:mt-0">
+                        <a href="https://github.com/ioNihal/restaurant-page" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="GitHub" title="GitHub">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://ionihal.github.io/restaurant-page/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-tomato transition-colors p-1.5 rounded-md hover:bg-gray-100"
+                            aria-label="Live Website" title="Live Website">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
                     </div>
                 </article>
 
@@ -327,9 +1159,9 @@
         <section class="py-10">
             <h2 class="text-xl font-bold mb-3">How TomatoWeb Is Structured</h2>
             <p class="max-w-3xl text-gray-700 text-sm sm:text-base">
-                Each project lives on its own subdomain with isolated deployments,
-                independent repositories, and production-style environments.
-                This allows experimentation without breaking the core hub.
+                TomatoWeb serves as a centralized project hub for all my active and archived repositories.
+                I fetch projects directly from GitHub to showcase them as a unified catalog.
+                This allows experimentation without cluttering my main portfolio.
             </p>
             <p class="max-w-3xl text-gray-700 text-sm sm:text-base mt-2">
                 Some projects, like <a href="#node-ws" class="text-black no-underline font-bold">
@@ -345,8 +1177,8 @@
         <section id="about" class="py-12 sm:py-16 md:py-20">
             <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Why TomatoWeb?</h2>
             <p class="max-w-3xl text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-                TomatoWeb is designed as a long-term creative development hub where independent
-                web projects live on isolated subdomains. My personal portfolio and resume are
+                TomatoWeb is designed as a long-term creative development hub bringing all my independent
+                web projects together in one centralized catalog. My personal portfolio and resume are
                 available at
                 <a href="https://ionihal.vercel.app" target="_blank" rel="noopener noreferrer"
                     class="text-tomato no-underline hover:underline">
