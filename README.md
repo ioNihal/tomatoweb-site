@@ -20,9 +20,6 @@ This repo powers the main hub that connects everything.
 
 ## How it’s structured
 
-- Each project lives on its **own subdomain**
-- Each project has its **own repository**
-- Deployments are isolated so experimentation stays safe
 - The hub stays clean while projects evolve independently
 
 This setup lets me experiment freely without breaking everything else.
